@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff0080, #7928ca);
+    color: white;
+    min-height: 100vh;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+  }
+  
+  .nav-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+  
+  .nav-links a:hover {
+    color: #ffd6ff;
+  }
+  
+  .auth-container {
+    text-align: center;
+    margin-top: 10vh;
+  }
+  
+  .auth-container input, .auth-container button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  button {
+    background: #ff3366;
+    color: white;
+    cursor: pointer;
+  }
+  

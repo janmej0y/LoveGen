@@ -1,0 +1,35 @@
+# =========================================================================
+# This file tells Git which files and folders to ignore.
+# It is a critical security feature to prevent secrets from being uploaded.
+# =========================================================================
+
+# Node.js dependencies
+# These folders contain thousands of files that can be re-downloaded
+# using `npm install`. They should never be committed.
+node_modules/
+/client/node_modules/
+/Server/node_modules/
+
+# Environment secrets file
+# This is the MOST IMPORTANT line. It prevents your secret API keys
+# for MongoDB, SendGrid, Cloudinary, etc., from being uploaded.
+Server/.env
+
+# Log files
+# Ignore any log files that might be generated.
+*.log
+npm-debug.log*
+
+# System files
+# Ignore operating system-specific files.
+.DS_Store
+Thumbs.db
+```
+
+After you have saved this file in the correct location, you will need to commit it to your repository.
+
+```bash
+git add .gitignore
+git commit -m "Feat: Create a comprehensive .gitignore file"
+git push
+
